@@ -7,8 +7,8 @@ def caesar_cipher(my_string, number)
     my_arrayLen = my_array.length.to_i - 1
     
     for x in 0..my_stringLen
-        if (my_string[x] == '!' || my_string[x] == '.' || my_string[x] == ' ' || my_string[x] == '?' )   
-            result += my_string[x].to_s  
+        if (my_string[x] == '!' || my_string[x] == ' ' || my_string[x] == '?' || my_string[x] == '.' || my_string[x] == ',')
+            result += my_string[x].to_s 
         end
         for i in 0..my_arrayLen
             if (my_string[x] == my_array[i])
